@@ -1,0 +1,95 @@
+p {
+  color: rgb(126, 6, 133);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  background-color: rgb(219, 194, 242);
+  padding: 10px;
+  border: solid black 1px;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(68, 6, 68);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(217, 180, 253);
+}
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: rgb(0, 0, 128);
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+.purple {
+  color: #800080;
+}
+
+.purple-bg {
+  background: #800080;
+}
+
+.fancy {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+a {
+  color: purple;
+}
+a[href^="#task"] {
+  background-color: #800080;
+}
+
+a[href*="#requirements"] {
+  background-color: gold;
+}
+
+a[href*="#submission"] {
+  background-color: gold;
+}
+
+a[href*="#grading"] {
+  background-color: gold;
+}
+
+a[href$="#deadline"] {
+  background-color: gold;
+}
+
+a[href^="#"] {
+  background-color: gold;
+}
+#identified {
+  background-color: #800080;
+}
+#bannerimage {
+  width: 100%;
+  background-image: url(dskny.jpg);
+  height: 401px;
+  background-color: purple;
+  background-position: center;
+}
+<style>
+.banner {
+    /* The image used */
+    background-image:
+    url(dskny.jpg);
+  }
+</style>

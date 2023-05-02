@@ -1,318 +1,182 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" type="text/css"/>
-  <title>CSS Design</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Blog</title>
 </head>
 <body>
-    <div style="background-color:rgb(218, 154, 250);">
-
-      <!-- HEADER -->
-      <header>
-        <div class="banner">Web Programming...
-          <div id="bannerimage"></div>
-  <div>
-    <h1>Demon Slayer</h1>
-    <h5>Kimetsu no Yaiba</h5>
-    <a 
-        href="https://www.youtube.com/watch?v=vFFyX928D9k&ab_channel=Anicrad"
-        target="_blank"
-        id="btn"
+    <header>        
+            <nav>
+                <div class="container">
+                    <div class="hamburger">
+                        <div class="hamburger__line"></div>
+                        <div class="hamburger__line"></div>
+                        <div class="hamburger__line"></div>
+                    </div>
+                    <ul class="links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education_exp">Education & Work Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="pages/hobbies.html">Hobbies</a></li>
+                    </ul>
+                </div>                
+            </nav>
+    
+            <div class="intro">
+                <div class="personalinfo">
+                    <img class="circle" src="images/myphoto.jpg" alt="">
+                    <h3>Syrym Batyr</h3>
+                    <p>BS in Economics. Astana</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p>syrym.batyr@nu.edu.kz</p>
+                    <p>+7-(700)-961-43-61</p>
+                    <p></p>
+                    <p></p>
+                    <div class="icons">
+                        <a href="https://github.com/nikoBS"><img class="personalinfo__icon" src="images/git.png" alt=""></a>
+                        <a href="https://www.instagram.com/bsyrym/"><img class="personalinfo__icon" src="images/insta.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="maintext">
+                    <p>MY NAME IS</p>
+                    <h1>Syrym Batyr</h1>
+                    <h3>Welcome to my personal blog</h3>
+                </div>
+            </div>
+        </div>
         
-      >
-        Opening 1 <!--External link-->
-      </a>
-  </div>  
+    </header>
 
+    <main>
+
+        <div id="about">
+            <div class="container">
+                <h1>About</h1>
+                <p>My name is Syrym Batyr and I am a senior student at Nazarbayev University. 
+                    This is my personal blog where I post achievements and favorite subjects 
+                    related to my studies at the university, as well as some of my work 
+                    experience and hobbies.</p>
+            </div>
         </div>
-      </header>
-    
-      <!-- Navbar -->
-      <nav>
-          <a class="logo" href="#">
-            <img id="logo_img" src="dslogo.jpg" alt="logo">
-          </a>
-          <ul class="menu">
-            <li><a class="active" href="#task">Task</a></li>
-            <li><a href="#requirements">Requirements</a></li>
-            <li><a href="#submission">Submission</a></li>
-            <li><a href="#grading">Grading</a></li>
-            <li><a href="#deadline">Deadline</a></li>
-            <li><a href="#">SignIn</a></li>
-          </ul>
-      </nav>
-    
-      <!-- Main Content -->
-      <section class="main_content">
-        <h1 id="main-heading" class="topic">
-          <div id="identified">
-    
-             Lab 4 - Designing with CSS 
-          </div>
-        </h1>
-        <hr>
-        <article id="task">
-          <h2 >Task</h2>
-          <p>
-            <img src="css_in_a_nutshell.jpg" alt="" width="300px" height="400">
-            As you have alredy learned in the last lecture, 
-            CSS is about the presentation of the documents
-            like HTML or XML.
-            You need to apply
-            CSS styling rules to make this template HTML file look
-            beautiful and interesting.  
-          </p>
-          <p class="purple fancy">
-            There are no 
-            limits to what techniques you use and how you 
-            ultimately solve this task. 
-            However, there are some minimal requirements
-            which are explained in the next section below.
-            <a href="#requirements">Next...</a>
-          </p>
-        </article>
-        <article id="requirements">
-          <h2 >Requirements</h2>
-          <p class="purple fancy">
-            
-            The main requirement for this task is to 
-            style this HTML document without any 
-            changes (including adding new and deleting the existing elements) to itself except for these cases: 
-            <ul>
-              <li>
-                You can add <strong>id</strong>
-                and <strong>class</strong> 
-                attributes to the ncessary elements. 
-                </li>
-                <li>
-                You can replace the 
-                images in the defined elements within this document with your
-                own ones. 
-                </li><li>
-                Notice that there is a place for a 
-                large banner on the top of the page,
-                you <strong>must</strong> place an image there only using CSS.
-                </li>
-                <li>
-                  You <strong>must</strong> write your names in the specified fields below.
-                </li>
-                <li>You can change the location
-                  of in the map below or replace it with the image.
-                </li>
-            </ul>
-          </p>
-          <p>
-            In your stylesheet you <strong>must</strong>
-             use these selectors:
-            <ul>
-              <li>Element selectors;</li>
-              <li>Class selectors;</li>
-              <li>Attribute selectors;</li>
-              <li>ID selectors.</li>
-              <li>Pseudo-class selectors.</li>
-            </ul>
-          </p>
-          <p>
-            Also, you <strong>must</strong> 
-            use the necessary CSS properties
-            and demonstrate the following changes
-            of the elements:
-            <ul>
-              <li>font and background colors;</li>
-              <li>font family and size;</li>
-              <li>margin, padding and borders;</li>
-              <li>image sizes (width and height);</li>
-              <li>text alignment (horizontal and vertical);</li>
-            </ul>
-            Additionally, a special focus <strong>must</strong> 
-            be done to the menu links.        
-            They need to change their status appropriately 
-            (active, hover, visited)
-            as well as be placed in a natural way,
-            i.e. horizontally or vertically. 
-            <a href="#submission">Next...</a>
-          </p>
-        </article>
-        <article id="submission">
-          <h2>Submission</h2>
-          <p>
-           As usual, you <strong>must</strong> submit 
-           your work via Github. All the files and images need to go to 
-           your <strong> <i>username.github.io</i> </strong>repository. 
-           Also, this page must be available 
-           through this domain name.
-          </p>
-          <h3>Info</h3>
-          <p>
-             <img src="BSN.jpg.JPG" alt="" width="300px" height="300px">
-    
-            <ul>
-              <li>Syrym Batyr </li>
-            </ul>
-          </p>
-        </article>
-        <article id="grading">
-          <h2>Grading</h2>
-          For this assignment you will get 
-          <strong>70 points</strong>  in total.
-          The final score is the sum of the points 
-          for each of the criteria below.
-          <table>
-            <tr>
-              <th>Criteria</th>
-              <th>Points</th>
-            </tr>
-            <tr>
-              <td>CSS file is linked to the document</td>
-              <td>5 pts</td>
-            </tr>
-            <tr>
-              <td>Banner image is present</td>
-              <td>5 pts</td>
-            </tr>
-            <tr>
-              <td>Menu is styles appropriately</td>
-              <td>5 pts</td>
-            </tr>
-            
-            <tr>
-              <td>Photo is present </td>
-              <td>5 pts</td>
-            </tr>
-             <tr>
-              <td>HTML file is unchanged</td>
-              <td>5 pts</td>
-            </tr>
-            <tr>
-              <td>Required selectors are used</td>
-              <td>10 pts</td>
-            </tr>
-            <tr>
-              <td>Required CSS properties are used</td>
-              <td>10 pts</td>
-            </tr>
-            <tr>
-              <td>Website is available online</td>
-              <td>10 pts</td>
-            </tr>
-            <tr>
-              <td>Website looks nice and not broken</td>
-              <td>10 pts</td>
-            </tr>
-            <tr>
-              <td>Extra cool stuff is used</td>
-              <td>5 pts</td>
-            </tr>
-            </tr>
-          </table>
-        </article>
-      </section>
-    
-      <!-- Aside Information -->
-      <aside>
-        <h3>Important</h3>
-        <section class="aside_content">
-          <article id="deadline">
-            <h4>Deadlines:</h4>
-            <ul>
-              <li>Soft deadline: Jan. 31, 2023, 23:59</li>
-              <li>Hard deadline: Feb. 2, 2023, 23:59</li>
-            </ul>
-            <p>
-            <a href="#">More...</a>
-          </article>
-          </section>
-         
-            <h3>Some Dummy Content</h3>
-           <section>
-            <article>
-            <h4>Article 1</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, 
-              adipisicing elit. Odit, fugiat eveniet! 
-              Optio quia perspiciatis earum ipsa dicta 
-              porro dolorum facere laudantium repellat 
-              ad necessitatibus asperiores dolor, molestias 
-              officiis corrupti iusto.
-              <a href="#">More...</a>
-            </p>
-          </article>
-          <article>
-            <h4>Article 2</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, 
-              adipisicing elit. Odit, fugiat eveniet! 
-              Optio quia perspiciatis earum ipsa dicta 
-              porro dolorum facere laudantium repellat 
-              ad necessitatibus asperiores dolor, molestias 
-              officiis corrupti iusto.
-              <a href="#">More...</a>
-            </p>
-          </article>
-          <article>
-            <h4>Article 3</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, 
-              adipisicing elit. Odit, fugiat eveniet! 
-              Optio quia perspiciatis earum ipsa dicta 
-              porro dolorum facere laudantium repellat 
-              ad necessitatibus asperiores dolor, molestias 
-              officiis corrupti iusto.
-              <a href="#">More...</a>
-            </p>
-          </article>
-        </section>
-      </aside>
-    
-      <!-- FOOTER -->
-      <footer>
-        <div class="contacts">
-          <div >
-            <h5>Contacts</h5>
-            <p>
-              Nazarbayev University <br>
-              53 Kabanbay Batyr ave. <br>
-              Block 7, Room 7.422 <br>
-              Ph.: +7-7172-123-4567 <br>
-              <a href="mailto:info@naturallyinspired.com" class="email">
-                info@naturallyinspired.com
-              </a>
-            </p>
-          </div>
-          <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6401.084704639175!2d71.41115068942759!3d51.129625272207385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245878581dfd6bf%3A0x85d0910e33e2a919!2sPinta!5e0!3m2!1sen!2sus!4v1675348304712!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+
+        <div id="education_exp">
+            <div class="container">
+                <div class="education_exp__sub">
+                    <h1>Education</h1>
+
+                    <div class="education_exp__sub__sub">
+                        <p>Aktau Kazakh-Turkish High School</p>
+                        <p>2017</p>
+                    </div>
+
+                    <div class="education_exp__sub__sub">
+                        <p>ENU</p>
+                        <p>2017-2018</p>
+                    </div>
+                    
+                    <div class="education_exp__sub__sub">
+                        <p>NU</p>
+                        <p>2018-2023</p>
+                    </div>
+                </div>
+                <div class="education_exp__sub">
+                    <h1>Work Experience</h1>
+                    <div class="education_exp__sub__sub">
+                        <p>Restaurant chain 'Pinta'</p>
+                        <p>2019</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="categories">
-          <h5>Top 10 Categories</h5>
-          <ul>
-            <li><a href="#">Category 1</a></li>
-            <li><a href="#">Category 2</a></li>
-            <li><a href="#">Category 3</a></li>
-            <li><a href="#">Category 4</a></li>
-            <li><a href="#">Category 5</a></li>
-            <li><a href="#">Category 6</a></li>
-            <li><a href="#">Category 7</a></li>
-            <li><a href="#">Category 8</a></li>
-            <li><a href="#">Category 9</a></li>
-            <li><a href="#">Category 10</a></li>
-          </ul>
+
+        <div id="skills">
+            <div class="container">
+                <h1>Skills and Languages</h1>
+                <div class="skills__sub">
+                    <div class="skills__sub__item">
+                        <p>C</p>
+                        <div class="bar">
+                            <div class="progress" style="width: 55px"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__sub__item">
+                        <p>CSS</p>
+                        <div class="bar">
+                            <div class="progress" style="width: 75px"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__sub__item">
+                        <p>HTML</p>
+                        <div class="bar">
+                            <div class="progress" style="width: 85px"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__sub__item">
+                        <p>JavaScript</p>
+                        <div class="bar">
+                            <div class="progress" style="width: 65px"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__sub">
+
+                    <div class="skills__sub__item">
+                        <p>Kazakh</p>
+                        <div class="bar">
+                            <div class="progress" style="width: 85px"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__sub__item">
+                        <p>Russian</p>
+                        <div class="bar">
+                            <div class="progress" style="width: 85px"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__sub__item">
+                        <p>English</p>
+                        <div class="bar">
+                            <div class="progress" style="width: 70px"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="quick_links">
-          <h5>Quick Links</h5>
-          <ul>
-            <li><a href="#">Item1</a></li>
-            <li><a href="#">Item2</a></li>
-            <li><a href="#">Item3</a></li>
-            <li><a href="#">Item4</a></li>
-            <li><a href="#">Item5</a></li>
-            <li><a href="#">Item6</a></li>
-          </ul>
+
+        <div class="contact">
+            <div class="container">
+                <div class="contact__sub">
+                    <h1>Contact Me</h1>
+                    
+                    <div class="icons">
+                        <a href="https://github.com/nikoBS"><img class="personalinfo__icon" src="images/git.png" alt=""></a>
+                        <a href="https://www.instagram.com/bsyrym/"><img class="personalinfo__icon" src="images/insta.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="contact__sub">
+                    <p>syrym.batyr@nu.edu.kz</p>
+                    <p>+7-(700)-961-43-61</p>
+                </div>
+            </div>
         </div>
-      </footer>
-    </div>
+
+        <footer>
+            <div class="container">
+                &copy; 2023 By Syrym Batyr
+            </div>
+        </footer>
+
+    </main>
 </body>
+<script src="main.js"></script>
 </html>
